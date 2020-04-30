@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/menu" routersDirection="back">
+                <!--  enrutar a la otra vista -->
+                <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Consulta de Usuarios</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-item-sliding *ngFor='let estado of estadoActual'>
+
+            <ion-item>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Usuario :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{estado.usuario}}
+                            </ion-label>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Password :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{estado.contrasena}}
+                            </ion-label>
+                        </ion-col>
+
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Nombre :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{estado.nombre}}
+                            </ion-label>
+                        </ion-col>
+
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Apellido :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{estado.apellido}}
+                            </ion-label>
+                        </ion-col>
+
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Email :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{estado.correo}}
+                            </ion-label>
+                        </ion-col>
+
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+
+        </ion-item-sliding>
+    </ion-card>
+
+</ion-content>

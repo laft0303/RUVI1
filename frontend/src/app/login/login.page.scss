@@ -1,0 +1,32 @@
+    ion-content {
+        --ion-background-color: #00a9ea;
+    }
+    
+    ion-title {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 8vw;
+        padding: 10vh 20vw 0vh 20vw;
+    }
+    
+    .lista {
+        margin: 10vh 12vw 10vh 12vw;
+        font-size: 140%;
+        --color: var(--ion-color-primary);
+    }
+    
+    .input-label {
+        color: #FFFFFF;
+    }
+    
+    ion-content>form>ion-toolbar>ion-button {
+        --border-radius: 7vw;
+        --background: var(--ion-color-secondary);
+        --color: var(--ion-color-primary);
+        margin: 10vh 25vw 0vh 25vw;
+        width: 50vw;
+    }
+    
+    input {
+        --color: var(--ion-color-primary);
+    }

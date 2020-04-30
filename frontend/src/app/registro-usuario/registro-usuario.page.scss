@@ -1,0 +1,34 @@
+ion-header {
+    --ion-background-color: #00a9ea;
+}
+
+ion-content {
+    --ion-background-color: #00a9ea;
+}
+
+ion-header>ion-toolbar>ion-title {
+    color: #FFFFFF;
+    font-size: 6vw;
+}
+
+ion-header>ion-toolbar>ion-buttons>ion-button>ion-icon {
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+ion-list {
+    margin: 4vh 0vw 0vh 0vw;
+}
+
+ion-content>div>ion-button {
+    --border-radius: 7vw;
+    --background: var(--ion-color-secondary);
+    --color: var(--ion-color-primary);
+    margin: 4vh 25vw 0vh 25vw;
+    width: 50vw;
+}
+
+ion-content>ion-list>ion-item>ion-label {
+    color: #FFFFFF;
+}

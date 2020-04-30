@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/login" routersDirection="back">
+                <!--  enrutar a la otra vista -->
+                <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Consulta del Vendedor</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-item-sliding *ngFor='let f of estado'>
+
+            <ion-item>
+                <ion-grid>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Nombre :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{f.nombres}}
+                            </ion-label>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Apellido :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{f.apellidos}}
+                            </ion-label>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Dirección :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{f.direccion}}
+                            </ion-label>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-label>
+                                Telefono :
+                            </ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <ion-label>
+                                {{f.telefono}}
+                            </ion-label>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-card>
+
+
+</ion-content>

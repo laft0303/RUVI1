@@ -1,0 +1,87 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/registro-documento" routersDirection="back">
+                <!--  enrutar a la otra vista -->
+                <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Datos personales</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label position="floating">* Nombres Completos
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="nombres" type="text" required value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">* Apellidos
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="apellidos" name=t ype="text" required value=""></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">* Edad
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="edad" type="text" required value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>* Sexo</ion-label>
+            <ion-select [(ngModel)]="sexo" required interface="popover">
+                <ion-select-option value="Masculino">Masculino</ion-select-option>
+                <ion-select-option value="Femenino">Femenino</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">* Dirección
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="direccion" type="text" required value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">* Teléfono
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="telefono" type="number" required value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating"> Correo
+                <ion-text color="danger"></ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="correo" type="text" required value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Discapacidad</ion-label>
+            <ion-select [(ngModel)]="discapacidad" required interface="popover">
+                <ion-select-option value="Si">Si</ion-select-option>
+                <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Desplazado(a)</ion-label>
+            <ion-select [(ngModel)]="desplazado" required interface="popover">
+                <ion-select-option value="Si">Si</ion-select-option>
+                <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+
+    </ion-list>
+
+    <div>
+
+        <ion-button (click)="saveForm()" type="submit" routerLink="/salud" routersDirection="forward">
+            Guardar
+        </ion-button>
+    </div>
+</ion-content>

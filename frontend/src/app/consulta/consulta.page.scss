@@ -1,0 +1,34 @@
+ion-header {
+    --ion-background-color: #00a9ea;
+}
+
+ion-content {
+    --ion-background-color: #00a9ea;
+}
+
+ion-header>ion-toolbar>ion-title {
+    color: #FFFFFF;
+    font-size: 6vw;
+}
+
+ion-header>ion-toolbar>ion-buttons>ion-button>ion-icon {
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+ion-content>ion-card>ion-item>ion-grid>ion-row>ion-col>ion-label {
+    color: #FFFFFF;
+}
+
+ion-content>ion-list {
+    margin: 10vh 7vw 0vh 7vw;
+}
+
+ion-content>div>ion-button {
+    --border-radius: 7vw;
+    --background: var(--ion-color-secondary);
+    --color: var(--ion-color-primary);
+    margin: 9vh 25vw 0vh 25vw;
+    width: 50vw;
+}

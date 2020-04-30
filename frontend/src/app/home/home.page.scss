@@ -1,0 +1,33 @@
+ion-content {
+    --ion-background-color: #00a9ea;
+}
+
+ion-content>div>ion-buttons {
+    float: right;
+    color: #FFFFFF;
+    font-size: 8vw;
+}
+
+ion-content>div>p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10vw;
+    padding: 10vh 0vw 0vh 0vw;
+}
+
+ion-content>div>div {
+    height: 42vh;
+    width: 75vw;
+}
+
+ion-content>div>div>img {
+    height: 100%;
+    width: 100%;
+    margin: 0vh 12.5vw 0vh 12.5vw;
+}
+
+ion-content>div>h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 7vw;
+}

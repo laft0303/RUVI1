@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/login" routersDirection="back">
+                <!--  enrutar a la otra vista -->
+                <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title>Menú</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card [routerLink]="['/registro-documento']">
+                    <ion-item>
+                        <ion-icon name="clipboard" slot="start"></ion-icon>
+                        <ion-label>
+                            <h1>Registro</h1>
+                        </ion-label>
+                        <ion-button fill="outline" slot="end">View</ion-button>
+                    </ion-item>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-item routerLink="../consulta">
+                        <ion-icon name="checkbox-outline" slot="start"></ion-icon>
+                        <ion-label>
+                            <h1>Consulta</h1>
+                        </ion-label>
+                    </ion-item>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
